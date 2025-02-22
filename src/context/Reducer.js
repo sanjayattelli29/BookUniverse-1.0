@@ -1,4 +1,4 @@
-export default (state, action) => {
+const reducer = (state, action) => {
   const { carts } = state;
   let cartIndex;
 
@@ -39,11 +39,13 @@ export default (state, action) => {
         ...state,
         carts: state.carts.filter(cart => cart.id !== action.payload)
       };
+
     case "GET_SEARCHED_STRING":
       return {
         ...state,
         searchString: action.payload.trim() === "" ? null : action.payload
       };
+
     case "GET_SEARCHED_BOOKS":
       const reg = new RegExp(`${action.payload}`, "gi");
       return {
@@ -62,3 +64,5 @@ export default (state, action) => {
       return state;
   }
 };
+
+export default reducer;
