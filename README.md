@@ -18,7 +18,7 @@ This Project is a Simple ReactJS Application which demonstrates the following
 
 ## Live Application URL
 
-#### https://ekamid.github.io/react-bookstore-cart/
+#### https://bookuniverse-10.netlify.app/
 
 ## Prerequisites
 
